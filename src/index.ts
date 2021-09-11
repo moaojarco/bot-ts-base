@@ -1,5 +1,3 @@
 import Client from "./Client";
 
-const bot = new Client({intents: ["GUILDS", "DIRECT_MESSAGES", "GUILD_MESSAGES"]});
-
-bot.init();
+new Client({intents: ["GUILDS", "GUILD_MESSAGES", "DIRECT_MESSAGES"]}).init();
